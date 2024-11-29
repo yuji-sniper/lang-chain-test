@@ -23,4 +23,4 @@ chain = prompt | llm | output_parser
 
 answer = chain.invoke({"sentences_before_check": "こんんんちわ、なおとです。"})
 
-print(answer, end="\n")
+print(answer)
