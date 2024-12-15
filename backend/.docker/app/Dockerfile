@@ -1,10 +1,10 @@
-FROM python:3.13
+FROM python:3.12
 
 ENV POETRY_HOME=/opt/poetry
 ENV PATH="$POETRY_HOME/bin:$PATH"
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV PYTHONPATH="/app/.venv/lib/python3.13/site-packages:$PYTHONPATH"
+ENV PYTHONPATH="/app/.venv/lib/python3.12/site-packages:$PYTHONPATH"
 
 WORKDIR /app
 
