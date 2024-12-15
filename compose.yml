@@ -1,0 +1,12 @@
+services:
+  app:
+    container_name: lang-serve
+    build:
+      context: .
+      dockerfile: ./backend/.docker/app/Dockerfile
+    volumes:
+      - ./backend:/app
+    ports:
+      - 8000:8000
+    working_dir: /app
+    command: poetry run uvicorn app.main:app --host 0.0.0.0 --reload
